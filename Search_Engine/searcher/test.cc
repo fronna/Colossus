@@ -29,7 +29,7 @@ int main()
 {
   //验证整个搜索模块是否是正确的
   searcher::Searcher searcher;
-  bool ret = searcher.Init("../data/tmp/raw_input");
+  bool ret = searcher.Init("../../../data/tmp/raw_input");
   if(!ret) {
     return 1;
   }

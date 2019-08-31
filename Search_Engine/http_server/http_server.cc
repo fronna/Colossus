@@ -5,7 +5,7 @@
 int main() {
   //1. 创建searcher对象，并初始化
   searcher::Searcher s;
-  bool ret = s.Init("../data/tmp/raw_input");
+  bool ret = s.Init("../../../data/tmp/raw_input");
   if(!ret) {
     std::cout << "Searcher Init failed" << std::endl;
     return 1;

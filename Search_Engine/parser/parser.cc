@@ -17,8 +17,8 @@
 #include "../common/util.hpp"
 
 //全局变量前面加上g_ 的前缀
-const std::string g_input_path = "../data/input";
-const std::string g_output_path = "../data/tmp/raw_input";
+const std::string g_input_path = "../../../data/input";
+const std::string g_output_path = "../../../data/tmp/raw_input";
 
 //doc指的是文档，也就是待搜索的html
 struct DocInfo{

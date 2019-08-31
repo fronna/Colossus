@@ -1,8 +1,8 @@
-#pragma once 
+#pragma once
 //构建索引模块和搜索模块
 #include <string>
 #include <map>
-#include "/home/lua/Recruit/Proc/cppjieba/include/cppjieba/Jieba.hpp"
+#include "/home/lua/Proc/ColossusProject/cppjieba/include/cppjieba/Jieba.hpp"
 
 namespace searcher {
 

@@ -1,10 +1,12 @@
-FLAG=-std=c++11 -lpthread -I /home/lua/Recruit/Proc/cppjieba/include
 bin=HttpServer
-cc=g++
+cc=g++ -std=c++11
+LDFLAGS=-lpthread -I /home/lua/Proc/ColossusProject/cppjieba/include
 
-$(bin):HttpServer.cc 
-	$(cc) -o HttpServer.cc $(FLAG) #-D_DEBUG_
+$(bin):HttpServer.cc ../Search_Engine/searcher/libsearcher.so 
+	$(cc) -o $@ $^ ../Search_Engine/searcher/libsearcher.so  $(LDFLAGS) #-D_DEBUG_
+#testCgi:testCgi.cc 
+#	$(cc) -o $@ $^
 
 .PHONY:clean
 clean:
-	rm -f $(bin)
+	rm -f $(bin) testCgi
